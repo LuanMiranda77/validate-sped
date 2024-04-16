@@ -40,7 +40,7 @@ export const MainHeader: React.FC<Props> = ({ alterTheme, onClickMenu }) => {
         >
           <AiOutlineMenu />
         </button> */}
-        <Logo size="MEDIUM" />
+        <Logo size="MINI" />
       </div>
 
       <div>

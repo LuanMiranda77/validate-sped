@@ -1,7 +1,11 @@
 import { saveAs } from "file-saver";
 import React, { ChangeEvent, useState } from "react";
 
-const InputFile: React.FC = () => {
+interface Iprops {
+  valeu: File | null;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+}
+const InputFile: React.FC<Iprops> = ({ onChange }) => {
   const [file, setFile] = useState<File | null>(null);
   const [progress, setProgress] = useState(0);
 
@@ -145,11 +149,6 @@ const InputFile: React.FC = () => {
     return lines;
   };
 
-  return (
-    <div>
-      <input type="file" onChange={handleFileChange} />
-      <span>{progress}%</span>
-    </div>
-  );
+  return <input type="file" onChange={onChange} />;
 };
 export default InputFile;

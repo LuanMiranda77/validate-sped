@@ -17,11 +17,11 @@ export const Logo: React.FC< LogoProps> = (props) => {
     }else if (props.size === "SMALL"){
       return <img src={logo} alt="" style={{height:"15%", width:"25%"}} />
     }else if (props.size === "MINI"){
-      return <img src={logo} alt="" style={{height:"5%", width:"15%"}} />
+      return <img src={logo} alt="" style={{height:"5%", width:"45px"}} />
     }
   }
   return <Container className='flex items-center text-white'>
           {setSize()}
-          <p className='text-xl'>A Divina Makeup</p>
+          <p className='text-xl'>Validador Sped</p>
          </Container>;
 }
