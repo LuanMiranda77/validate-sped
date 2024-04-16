@@ -11,7 +11,7 @@ interface MenuProps {
 const ButtonMenu: React.FC<MenuProps> = ({ icon, label, link }) => {
   return (
     <Link to={link}>
-      <div className="flex flex-col w-100 text-center mb-5 duration-300 origin-center hover:-translate-y-1">
+      <div className="flex flex-col w-100 text-center mb-5 duration-300 origin-center hover:-translate-y-1 justify-center">
         {icon}
         <label className="text-black font-bold" style={{ fontSize: "11px" }}>
           {label}

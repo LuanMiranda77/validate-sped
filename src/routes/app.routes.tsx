@@ -2,6 +2,7 @@ import React, { ReactNode, Suspense } from "react";
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 //nossos imports
 import { FaCashRegister } from "react-icons/fa";
+import { GrValidate } from "react-icons/gr";
 import { Layout } from "../components/Layout";
 import { Notfound } from "../module/Notfound";
 import Home from "../module/home";
@@ -25,10 +26,10 @@ export const routesApp: RouteApp[] = [
     element: () => <Home />,
   },
   {
-    name: "inicio",
+    name: "Validador",
     path: "/home",
     element: () => <Home />,
-    icon: <FaCashRegister className="btn-menu" />,
+    icon: <GrValidate className="btn-menu" color={'#fea000'} />,
   },
   {
     name: "inicio",

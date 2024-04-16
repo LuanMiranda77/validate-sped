@@ -21,9 +21,9 @@
     }
   
     /* .btn-menu {
-      @apply  text-white font-bold px-2 py-2 rounded-xl w-20 h-20 flex flex-col justify-center items-center shadow-md translate-y-0 duration-500 hover:-translate-y-2 hover:duration-500 hover:shadow-xl;
-    } */
-  
+      @apply  text-white font-bold px-2 py-2 rounded-xl w-12 h-12 flex flex-col justify-center items-center shadow-md translate-y-0 duration-500 hover:-translate-y-2 hover:duration-500 hover:shadow-xl;
+    }
+   */
     .input-pattern {
       @apply  font-bold p-1 rounded-md duration-500 border-2 border-white hover:shadow-xl hover:rounded-lg;
     }

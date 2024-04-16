@@ -10,7 +10,7 @@ export const Aside: React.FC = () => {
         {routesApp.map(
           (route) =>
             route.path != "*" &&
-            route.path != "/" && <ButtonMenu label={route.name} icon={route.icon} link={route.path} />
+            route.path != "/" && <ButtonMenu  label={route.name} icon={route.icon} link={route.path} />
         )}
         {/* <ButtonMenu label="Caixa" icon={<FaCashRegister className="btn-menu" />} link="/caixa" />
         <ButtonMenu label="Financeiro" icon={<RiMoneyDollarCircleFill className="btn-menu" />} link="/finance" />
