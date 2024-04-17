@@ -9,14 +9,12 @@ interface MenuProps {
 }
 
 const ButtonMenu: React.FC<MenuProps> = ({ icon, label, link }) => {
+  var url = window.location.href;
+  console.log(url)
   return (
-    <Link to={link}>
-      <div className="flex flex-col w-100 text-center mb-5 duration-300 origin-center hover:-translate-y-1 justify-center">
-        {icon}
-        <label className="text-black font-bold" style={{ fontSize: "11px" }}>
-          {label}
-        </label>
-      </div>
+    <Link className="text-[#757575] btn-menu font-bold  active:bg-blue-600 active:text-white h-[60px]" to={link}>
+      <i className="mr-2">{icon}</i>
+      <span>{label}</span>
     </Link>
   );
 };

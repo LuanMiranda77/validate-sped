@@ -19,7 +19,7 @@ const Home: React.FC = () => {
   // }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full"> 
       <InputFile onChange={handleFileChange} valeu={file} />
       {progress > 0 && <ProgressBar value={progress} />}
       {progress === 100 && (

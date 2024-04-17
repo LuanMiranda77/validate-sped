@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
-import { Grid } from "./styles";
-import { MainHeader } from "../MainHeader";
-import { Aside } from "../Aside";
-import { Content } from "../Content";
 import { ThemeContext } from "styled-components";
+import { MainBreadcrumb } from "../MainBreadcrumb";
+import { MainContent } from "../MainContent";
+import { MainFooter } from "../MainFooter";
+import { MainHeader } from "../MainHeader";
+import { Grid } from "./styles";
 
 interface Props {
   //adicionar os props
@@ -21,13 +22,12 @@ export const Layout: React.FC<Props> = (props) => {
   };
 
   return (
-    <Grid className={sizeAside} style={{gridTemplateColumns:sizeAside}}>
-      <MainHeader
-        alterTheme={props.alterTheme}
-        onClickMenu={visibleAside}
-      />
-      <Aside />
-      <Content>{props.children}</Content>
+    <Grid className={sizeAside} style={{ gridTemplateColumns: sizeAside }}>
+      <MainHeader alterTheme={props.alterTheme} onClickMenu={visibleAside} />
+      {/* <Aside /> */}
+      <MainBreadcrumb />
+      <MainContent>{props.children}</MainContent>
+      <MainFooter />
     </Grid>
   );
 };

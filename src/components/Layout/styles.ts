@@ -10,14 +10,16 @@ export const Grid  = styled.div`
 
     display: grid;
     /* grid-template-columns: 200px auto; */
-    grid-template-rows: 40px auto;
+    grid-template-rows: 50px auto;
     transition: grid-template-columns .5s;
     grid-template-areas:
     'MH MH'
-    'AS CT';
+    'MB MB'
+    'CT CT'
+    'MF MF';
 
     height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px; */
 
 
 

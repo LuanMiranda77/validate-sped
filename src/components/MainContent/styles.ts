@@ -6,7 +6,7 @@ export const Container  = styled.div`
     background:${props => props.theme.colors.background};
     padding: 25px;
 
-    height:calc(100vh -50px);
+    height:calc(100vh - 135px);
     overflow-y:auto;
 
 @media screen and (max-width: 40em) {

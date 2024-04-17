@@ -20,10 +20,10 @@
       @apply  font-bold p-1  translate-y-0 duration-500 hover:-translate-y-1  hover:shadow-xl hover:rounded-lg;
     }
   
-    /* .btn-menu {
-      @apply  text-white font-bold px-2 py-2 rounded-xl w-12 h-12 flex flex-col justify-center items-center shadow-md translate-y-0 duration-500 hover:-translate-y-2 hover:duration-500 hover:shadow-xl;
+    .btn-menu {
+      @apply  cursor-pointer flex items-center justify-center px-5 py-2 rounded-md shadow-md text-xl translate-y-0 duration-500 hover:-translate-y-2 hover:duration-500 hover:shadow-xl;
     }
-   */
+  
     .input-pattern {
       @apply  font-bold p-1 rounded-md duration-500 border-2 border-white hover:shadow-xl hover:rounded-lg;
     }

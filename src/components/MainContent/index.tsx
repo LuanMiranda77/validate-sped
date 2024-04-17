@@ -5,7 +5,7 @@ interface Props{
   children: React.ReactNode;
 }
 
-export const Content: React.FC<Props> = ({children}) => {
+export const MainContent: React.FC<Props> = ({children}) => {
   return <Container>
             {children}
          </Container>;

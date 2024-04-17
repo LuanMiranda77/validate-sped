@@ -27,7 +27,7 @@ export const MainHeader: React.FC<Props> = ({ alterTheme, onClickMenu }) => {
   };
 
   return (
-    <Container className="" style={{ boxShadow: "0px 15px 10px gray" }}>
+    <Container className="">
       <div className="">
         {/* <button
           style={{

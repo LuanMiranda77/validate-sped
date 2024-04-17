@@ -7,6 +7,7 @@ import { Layout } from "../components/Layout";
 import { Notfound } from "../module/Notfound";
 import Home from "../module/home";
 import { isElectron } from "../utils";
+import { AiFillAppstore } from "react-icons/ai";
 
 interface Props {
   setDefaultTheme(): void;
@@ -29,7 +30,7 @@ export const routesApp: RouteApp[] = [
     name: "Validador",
     path: "/home",
     element: () => <Home />,
-    icon: <GrValidate className="btn-menu" color={'#fea000'} />,
+    icon: <AiFillAppstore  />,
   },
   {
     name: "inicio",
