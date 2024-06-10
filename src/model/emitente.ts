@@ -1,5 +1,5 @@
 export interface Erros {
-  [chave: string]: string;
+  [chave: string]: number;
 }
 export class Emitente {
   name: string;

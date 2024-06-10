@@ -2,10 +2,10 @@ import { saveAs } from "file-saver";
 import React, { ChangeEvent, useState } from "react";
 
 interface Iprops {
-  valeu: File | null;
+  value: File | null;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
-const InputFile: React.FC<Iprops> = ({ onChange }) => {
+const InputFile: React.FC<Iprops> = ({ onChange, value }) => {
   const [file, setFile] = useState<File | null>(null);
   const [progress, setProgress] = useState(0);
 
@@ -149,6 +149,26 @@ const InputFile: React.FC<Iprops> = ({ onChange }) => {
     return lines;
   };
 
-  return <input type="file" onChange={onChange} />;
+  // return <input type="file" onChange={onChange} />;
+  return (
+    <div className="flex items-center w-6/12">
+      <input
+        type="text"
+        placeholder="Nome do arquivo"
+        value={value?.name}
+        readOnly
+        className="px-4 py-2 border rounded-l-lg w-full"
+      />
+      <div className="inline-block relative overflow-hidden rounded-r-lg w-52">
+        <input type="file" id="fileInput" className="hidden" onChange={onChange} />
+        <label
+          htmlFor="fileInput"
+          className="inline-block px-4 py-2 bg-gray-700 text-white cursor-pointer hover:bg-gray-800 hover:font-bold"
+        >
+          Escolher arquivo
+        </label>
+      </div>
+    </div>
+  );
 };
 export default InputFile;
